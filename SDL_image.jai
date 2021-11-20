@@ -14,4 +14,6 @@ IMG_InitPNG :: () -> u32 #foreign SDL2_image;
 IMG_InitTIF :: () -> u32 #foreign SDL2_image;
 IMG_InitWEBP :: () -> u32 #foreign SDL2_image;
 
+IMG_Load :: (path: *u8) -> *SDL_Surface #foreign SDL2_image;
+
 IMG_GetError :: SDL_GetError;
